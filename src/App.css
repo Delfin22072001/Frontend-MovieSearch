@@ -1,0 +1,59 @@
+body{
+  background-color: var(--background);
+}
+
+.brand-name{
+  color:var(--primary);
+}
+
+.search-bar{
+  width:750px;
+  border:none;
+  border-radius: 5px;
+  padding:8px;
+}
+
+.my-btn{
+  background-color: var(--primary);
+  border-radius: 5px;
+  border:none;
+  padding:5px 10px;
+  cursor: pointer;
+}
+
+.my-btn:hover{
+  background-color: var(--tertiary);
+}
+
+.my-btn:active{
+  background-color: var(--primary);
+}
+
+.card{
+  width:18em;
+  height:auto;
+  border:2px solid green;
+}
+
+.card img{
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: bottom;
+}
+
+.card .my-btn{
+  width:120px;
+}
+
+@media (max-width:600px) {
+  .search-bar{
+    width:100%
+  }
+}
+
+
+
+
+
+

@@ -18,7 +18,7 @@ export default function MovieDetails() {
     }
     displayDetails()
     
-  }, [])
+  }, [id])
 
   return (
     <div>

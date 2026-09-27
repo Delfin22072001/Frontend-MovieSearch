@@ -7,12 +7,16 @@ export default function MovieDetails() {
   const { id } = useParams()
   const [cardData, setCardData] = useState([])
 
-  useEffect(() => async () => {
+  useEffect(() => {
 
-    const apiKey = import.meta.env.VITE_API_KEY
-    const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
-    const data = await response.json()
-    setCardData(data)
+    const displayDetails = async () =>
+    {
+      const apiKey = import.meta.env.VITE_API_KEY
+      const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`)
+      const data = await response.json()
+      setCardData(data)
+    }
+    displayDetails()
     
   }, [])
 

@@ -36,11 +36,12 @@ body{
 }
 
 .card img{
-  height: 18rem;
+  max-height: 18rem;
   object-fit: cover;
   border-radius: 5px;
   object-position: bottom;
 }
+
 
 .card .my-btn{
   width:120px;
